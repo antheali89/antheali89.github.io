@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Turret+Road&display=swap');
+@import url('//db.onlinewebfonts.com/c/1303f23ac6a9bad6b7d1978d846636d2?family=Optima+LT+Std');
+
+:root {
+    font-size: 62.5%;
+    width: 100%;
+    height: 100%;
+}
+
+/* *{
+    font-family: Playfair Display, serif;
+    margin: 0;
+    padding: 0;
+    color: #E9D6C3 
+} */
+
+html,body {
+    height:100%;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    margin-bottom: 1rem;
+}
+
+h1{
+    font-size: 5rem;
+    margin-bottom: 2rem;
+}
+h1 > span {
+    font-size: 2.4rem;
+    font-weight: 100;
+}
+h2{
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    font-weight: 50;
+}
+h3{
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    font-weight: 50;
+}
+h4{
+    font-size: 1.8rem;
+    margin-bottom: 3rem;
+    margin-top: 3rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    font-weight: 50;
+}
+
+
+/* UTILITIES */
+
+.overlay {
+    position: absolute;
+    top: 10vh;
+    display: flex; 
+    width: 100vw; 
+    height: 80vh; 
+    background-color: rgba(75, 56, 48, 1); 
+    z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+    cursor: pointer; /* Add a pointer on hover */
+  }
+
+.spotlight {
+    position: absolute;
+    top: 15vh;
+    display: flex;  
+    z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+    width: 37.5rem;
+    border-radius: 350px / 400px;
+}
+
+.spotlight-sq {
+    position: absolute;
+    top: 15vh;
+    display: flex;  
+    z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+    width: 35rem;
+    height: 30rem;
+}
+
+.spotlight-flag {
+    position: relative;
+    box-sizing: content-box;
+    padding-top: 5rem;
+    z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+    width: 35rem;
+    height: 30rem;
+}
+
+.spotlight-flag:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-bottom: 5rem solid #eee;
+    border-left: 17.5rem solid transparent;
+    border-right: 17.5rem solid transparent;
+    z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 80rem;
+    margin: 0 auto;
+}
+
+.container > * {
+    width: 100%;
+}
+
+.product-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-top: 5rem;
+    overflow: scroll;
+    height: 39rem;
+}
+
+.product {
+    display: flex;
+    position: relative;
+    height: 100vh;
+    flex-direction: row;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.product-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.flex-column-center{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.flex-row-center{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.align-center{
+    align-items: center;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.scrolling {
+    overflow: scroll;
+}
+
+::-webkit-scrollbar {
+    display: none; /* hides scrollbars */
+}
+
+/* FONTS */
+
+.DA-Font {
+	font-family: Playfair Display, serif;
+    margin: 0;
+    padding: 0;
+    color: #E9D6C3;
+}
+
+.CC-Font {
+	font-family: 'EB Garamond', serif; 
+    margin: 0;
+    padding: 0;
+    color: #FFFDE7; 
+}
+
+.EC-Font {
+	font-family: 'Turret Road', cursive;
+    margin: 0;
+    padding: 0;
+    color: #2D3A3A; 
+}
+
+
+
+/* BUTTONS */
+
+.DA-btn {
+    font-size: 1.5rem;
+    padding: 0.7rem 0;
+    width: 12rem;
+    text-align: center;
+    border: 0.1rem solid #E9D6C3;
+    border-radius: 25px;
+    margin-bottom: 1rem;
+    text-decoration: none;
+    font-family: "Optima LT Std";
+    color: #E9D6C3;
+    background-color: #30321C;
+}
+
+.CC-btn {
+    font-size: 1.5rem;
+    padding: 0.7rem 0;
+    width: 12rem;
+    text-align: center;
+    border: 0.1rem solid #FFFDE7;
+    border-radius: 25px;
+    margin-bottom: 1rem;
+    text-decoration: none;
+    font-family: "Optima LT Std";
+    color: #FFFDE7;
+    background-color: #687BBA;
+}
+
+.EC-btn {
+    font-size: 1.5rem;
+    padding: 0.7rem 0;
+    width: 12rem;
+    text-align: center;
+    border: 0.1rem solid #F5F5F5;
+    border-radius: 25px;
+    margin-bottom: 1rem;
+    text-decoration: none;
+    font-family: "Optima LT Std";
+    color: #F5F5F5;
+    background-color: #621708;
+}
+
+.DA-btn:hover {
+    cursor: pointer;
+    box-shadow: 0 0.4rem 2.4rem 0 rgba(0, 0, 0, 0.5); 
+    transform: translateY(-0.1rem);
+    transition: transform 150ms;
+}
+
+.CC-btn:hover {
+    cursor: pointer;
+    box-shadow: 0 0.4rem 2.4rem 0 rgba(0, 0, 0, 0.5); 
+    transform: translateY(-0.1rem);
+    transition: transform 150ms;
+}
+
+.EC-btn:hover {
+    cursor: pointer;
+    box-shadow: 0 0.4rem 2.4rem 0 rgba(0, 0, 0, 0.5); 
+    transform: translateY(-0.1rem);
+    transition: transform 150ms;
+}
+
+.btn[disabled]:hover {
+    cursor: not-allowed;
+    box-shadow: none;
+    transform: none;
+}

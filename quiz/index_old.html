@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+	<title>Aesthetics Quiz</title>
+	<meta charset="UTF-8"/>
+	<link rel="stylesheet" href="style.css" type='text/css'>
+    <!-- <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">-->
+	<!--<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">-->
+	<script src="quiz.js"></script>
+
+</head>
+
+
+
+<body>
+
+	<div class="titleBar">
+
+		<div class="titleText">
+			<img src = "images/elc_comp.png" width=270 height=20 class=logo>
+			<ul><h2>What is your aesthetic?</h2><ul>
+			<!-- <ul><p>Take the quiz below!</p><ul>-->
+		</div>
+
+	</div>
+
+<form>
+	
+	<div class="grid">
+		<div class="questionBanner">
+			<h3>Pick A Fabric:</h3>			
+		</div>
+
+		<div class="sectionWrapper">
+
+			<div class="sections">
+				<input type="radio" name="fabric" value="linen" id="linen" class="input-hidden" onchange="getAnswers()"/>
+				<label for="linen">
+  					<img src="images/linen.jpg" alt="linen" >
+                      
+				</label>
+			</div>
+
+			<div class="sections">
+				<input type="radio" name="fabric" value="leather" id="leather" class="input-hidden" onchange="getAnswers()"/>
+				<label for="leather">
+					<img src="images/leather.jpg" alt="leather">
+                
+				</label>
+			</div>
+
+			<div class="sections">
+				<input type="radio" name="fabric" value="spandex" id="spandex" class="input-hidden" onchange="getAnswers()"/>
+				<label for="spandex">
+					<img src="images/spandex.jpg" alt="spandex">
+				</label>
+			</div>
+
+			<div class="sections">
+				<input type="radio" name="fabric" value="denim" class="input-hidden" id="denim" onchange="getAnswers()"/>
+				<label for="denim">
+					<img src="images/denim.jpg" alt="denim">
+				</label>
+			</div>
+
+			
+		</div>
+
+	</div>
+
+
+	<div class="grid">
+		<div class="questionBanner">
+			<h3>Pick A Scent:</h3>			
+		</div>
+
+		<div class="sectionWrapper">
+
+			<div class="sections">
+				<input type="radio" name="scent" value="bread" id="bread" class="input-hidden" onchange="getAnswers()"/>
+				<label for="bread">
+					<img src="images/bread.jpg" alt="bread">
+				</label>
+			</div>
+
+			<div class="sections">
+				<input type="radio" name="scent" value="leather1" id="leather1" class="input-hidden" onchange="getAnswers()"/>
+				<label for="leather1">				
+					<img src="images/leatherandtobacco.jpg" alt="leather1">
+				</label>
+			</div>
+
+			<div class="sections">
+				<input type="radio" name="scent" value="jasmine" id="jasmine" class="input-hidden" onchange="getAnswers()"/>
+				<label for="jasmine">
+					<img src="images/jasmine.jpg" alt="jasmine">
+				</label>
+			</div>
+
+			<div class="sections">
+				<input type="radio" name="scent" value="gas" id="gas" class="input-hidden" onchange="getAnswers()"/>
+				<label for="gas">
+					<img src="images/gas.jpg" alt="gas">
+				</label>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="grid">
+		<div class="questionBanner">
+			<h3>What would you do on a free day?</h3>			
+		</div>
+
+		<div class="sectionWrapper">
+
+			<div class="sections">
+				<input type="radio" name="freeDay" value="reading" id="reading" class="input-hidden" onchange="getAnswers()"/>
+				<label for="reading">
+					<img src="images/reading.jpg" alt="reading">
+				</label>
+			</div>
+
+			<div class="sections">
+				<input type="radio" name="freeDay" value="baking" id="baking" class="input-hidden" onchange="getAnswers()"/>
+				<label for="baking">
+					<img src="images/baking.jpg" alt="baking">
+				</label>
+			</div>
+
+			<div class="sections">
+				<input type="radio" name="freeDay" value="sleeping" id="sleeping" class="input-hidden" onchange="getAnswers()"/>
+				<label for="sleeping">
+					<img src="images/sleeping.jpg" alt="sleeping">
+				</label>
+			</div>
+
+			<div class="sections">
+				<input type="radio" name="freeDay" value="hiking" id="hiking" class="input-hidden" onchange="getAnswers()"/>
+				<label for="hiking">
+					<img src="images/hiking.jpg" alt="hiking">
+				</label>
+			</div>
+		</div>
+
+	</div>
+
+
+	
+	<div class="grid">
+
+		<div class="questionBanner">
+			<h3>Which of these animals would you choose to be your pet?</h3>			
+		</div>
+
+		<div class="sectionWrapper">
+
+			<div class="sections">
+				<input type="radio" name="pet" value="whitecat" id="whitecat" class="input-hidden" onchange="getAnswers()"/>
+				<label for="whitecat">
+					<img src="images/whitecat.jpg" alt="whitecat">
+				</label>
+			</div>
+
+			<div class="sections">
+				<input type="radio" name="pet" value="blackcat" id="blackcat" class="input-hidden" onchange="getAnswers()"/>
+				<label for="blackcat">
+					<img src="images/blackcat.jpg" alt="blackcat">
+				</label>
+			</div>
+
+			<div class="sections">
+				<input type="radio" name="pet" value="dog" id="dog" class="input-hidden" onchange="getAnswers()"/>
+				<label for="dog">
+					<img src="images/dog.jpg" alt="dog">
+				</label>
+			</div>
+
+			<div class="sections">
+				<input type="radio" name="pet" value="bunny" id="bunny" class="input-hidden" onchange="getAnswers()"/>
+				<label for="bunny">
+					<img src="images/bunny.jpg" alt="bunny">
+				</label>
+			</div>
+		</div>
+
+	</div>
+
+	
+	<div class="grid">
+
+		<div class="questionBanner">
+			<h3>Where would you go to grab food with friends?</h3>			
+		</div>
+
+		<div class="sectionWrapper">
+
+			<div class="sections">
+				<input type="radio" name="food" value="cafe" id="cafe" class="input-hidden" onchange="getAnswers()"/>
+				<label for="cafe">
+					<img src="images/cafe.jpg" alt="cafe">
+				</label>
+			</div>
+
+			<div class="sections">
+				<input type="radio" name="food" value="upscale" id="upscale" class="input-hidden" onchange="getAnswers()"/>
+				<label for="upscale">
+					<img src="images/restaurant.jpg" alt="upscale">
+				</label>
+			</div>
+
+			<div class="sections">
+				<input type="radio" name="food" value="park" id="park" class="input-hidden" onchange="getAnswers()"/>
+				<label for="park">
+					<img src="images/park.jpg" alt="park">
+				</label>
+			</div>
+
+			<div class="sections">
+				<input type="radio" name="food" value="hole" id="hole" class="input-hidden" onchange="getAnswers()"/>
+				<label for="hole">
+					<img src="images/hole1.jpg" alt="hole">
+				</label>
+			</div>
+		</div>
+
+	</div>
+	
+
+</form>
+
+	<div>
+		<div class="questionBanner">
+			<h3 id="resultHeader"></h3>			
+		</div>
+
+			<div class="result">
+				<div class="resultImgBlock">
+					<img src="" id="resultImg">
+				</div>
+			</div>
+
+	</div>
+</body>
+</html>
