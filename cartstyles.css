@@ -1,31 +1,31 @@
 @font-face { 
   font-family: OptimaLTStd;
-  src: url('../fonts/OptimaLTStd.ttf');
+  src: url('fonts/OptimaLTStd.ttf');
 }
 
 @font-face { 
   font-family: OptimaLTStd;
-  src: url('../fonts/OptimaLTStd-DemiBold.ttf');
+  src: url('fonts/OptimaLTStd-DemiBold.ttf');
   font-weight: bold;
 }
 
 @font-face {
   font-family: NotoSans;
-  src: url("../fonts/NotoSans-Medium.ttf");
+  src: url("fonts/NotoSans-Medium.ttf");
 }
 @font-face {
   font-family: NotoSans;
-  src: url("../fonts/NotoSans-Light.ttf");
+  src: url("fonts/NotoSans-Light.ttf");
   font-weight: 100;
 }
 @font-face {
   font-family: NotoSans;
-  src: url("../fonts/NotoSans-Bold.ttf");
+  src: url("fonts/NotoSans-Bold.ttf");
   font-weight: bold;
 }
 @font-face {
   font-family: NotoSans;
-  src: url("../fonts/NotoSans-LightItalic.ttf");
+  src: url("fonts/NotoSans-LightItalic.ttf");
   font-style: italic;
 }
 
