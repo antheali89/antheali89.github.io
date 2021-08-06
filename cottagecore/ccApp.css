@@ -5,37 +5,38 @@
 
 @font-face { 
     font-family: OptimaLTStd;
-    src: url('../quiz/fonts/OptimaLTStd.ttf');
+    src: url('../fonts/OptimaLTStd.ttf');
 }
 
 @font-face { 
     font-family: OptimaLTStd;
-    src: url('../quiz/fonts/OptimaLTStd-DemiBold.ttf');
+    src: url('../fonts/OptimaLTStd-DemiBold.ttf');
     font-weight: bold;
 }
 
 @font-face {
     font-family: NotoSans;
-    src: url("../quiz/fonts/NotoSans-Medium.ttf");
+    src: url("../fonts/NotoSans-Medium.ttf");
 }
 @font-face {
     font-family: NotoSans;
-    src: url("../quiz/fonts/NotoSans-Light.ttf");
+    src: url("../fonts/NotoSans-Light.ttf");
     font-weight: 100;
 }
 @font-face {
     font-family: NotoSans;
-    src: url("../quiz/fonts/NotoSans-Bold.ttf");
+    src: url("../fonts/NotoSans-Bold.ttf");
     font-weight: bold;
 }
 @font-face {
     font-family: NotoSans;
-    src: url("../quiz/fonts/NotoSans-LightItalic.ttf");
+    src: url("../fonts/NotoSans-LightItalic.ttf");
     font-style: italic;
 }
 
 .hidden {
-    display: none !important;
+    visibility: hidden !important;
+    /* opacity: 0; */
 }
 
 :root {
@@ -66,53 +67,64 @@ h4 {
 h1{
     font-size: 5rem;
     margin-bottom: 2rem;
+    margin-top: 0;
 }
 h1 > span {
     font-size: 2.4rem;
     font-weight: 100;
 }
 h2{
-    font-size: 1.8rem;
-    margin-bottom: 3rem;
-    margin-top: 1rem;
+    font-size: 2.4rem;
+    margin-bottom: 1rem;
+    margin-top: 0;
     font-weight: 50;
 }
 h3{
-    font-size: 1.8rem;
+    font-size: 5.7vw;
     margin-bottom: 1rem;
     margin-top: 1rem;
     font-weight: 50;
 }
 h4{
-    font-size: 1.8rem;
-    margin-bottom: 3rem;
-    margin-top: 3rem;
-    margin-left: 1rem;
-    margin-right: 1rem;
+    font-size: 2rem;
+    font-family: "Optima LT Std";
+    /* margin-bottom: 0.1rem; */
+    margin-top: 1rem;
     font-weight: 50;
 }
 
 
 /* UTILITIES */
 
-.overlay {
+.share-overlay {
     position: absolute;
-    top: 10vh;
+    bottom: 0;
     display: flex; 
     width: 100vw; 
-    height: 80vh; 
-    background-color: rgba(75, 56, 48, 1); 
+    height: 10vh; 
+    background-color:rgba(255,255,255, 1); 
+}
+
+.share-circle {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 1rem;
+    display: flex;  
     z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
-    cursor: pointer; /* Add a pointer on hover */
-  }
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgba(255,255,255, 1);
+}
 
 .spotlight {
     position: absolute;
     top: 25vh;
     display: flex;  
     z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
-    width: 35.5rem;
-    border-radius: 350px / 400px;
+    /* width: 97vw; */
+    border-radius: 360px / 400px;
 }
 
 .spotlight-sq {
@@ -148,15 +160,16 @@ h4{
 
 .arrow {
     border: solid #FFFDE7;
-    border-width: 0 3px 3px 0;
+    border-width: 0 4px 4px 0;
     display: inline-block;
-    padding: 3px;
+    padding: 8px;
     margin-bottom: 10vh;
 }
 
 .up {
     transform: rotate(-135deg);
     -webkit-transform: rotate(-135deg);
+    margin-bottom: 5vh;
 }
   
 .down {
@@ -183,10 +196,10 @@ h4{
     flex-direction: column;
     align-items: center;
     text-align: center;
-    padding-top: 5rem;
+    /*padding-top: 5rem;*/
     overflow: scroll;
-    height: 39rem;
-    /* width: 100vw; */
+    height: 109vw;
+    width: 97vw;
 }
 
 .product {
@@ -197,7 +210,11 @@ h4{
     flex-direction: row;
     align-items: center;
     flex-grow: 1;
-    margin-bottom: 7vh;
+    margin-bottom: 3vh;
+}
+
+.product-header {
+    padding-top: 5vh;
 }
 
 .product-info {
@@ -238,22 +255,52 @@ h4{
     display: none; /* hides scrollbars */
 }
 
+.aesthetic-circle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    /* overflow: scroll; */
+    top: 25vh;
+    height: 109vw;
+    width: 97vw;
+}
+
+#cc-div {
+    overflow-wrap: break-word;
+    height: 140vw;
+    width: 78vw;
+}
 
 .product-img {
-    width: 45%;
+    width: 40%;
     float: left;
     /* margin-left: 19rem; */
     margin-right: 2rem;
 }
 
 .brand-logo {
-    width: 150px;
+    width: 40vw;
     height: auto;
 }
 
 .product-desc {
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 5vw;
+}
+
+.prod-desc-div {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    height: 16vh;
+}
+
+.prod-category {
+    font-size: 1.7rem;
 }
 
 .prod-info-container {
@@ -277,6 +324,15 @@ h4{
     color: #FFFDE7; 
 }
 
+.index-desc {
+    font-size: 5.2vw
+}
+
+#aesthetic {
+    font-size: 4rem;
+    margin-bottom: 0;
+}
+
 .EC-Font {
 	font-family: 'Turret Road', cursive;
     margin: 0;
@@ -285,6 +341,10 @@ h4{
 }
 
 #cc-label {
+    margin-top: 5.5vh;
+}
+
+#aesthetic-heading {
     margin-top: 5.5vh;
 }
 
@@ -306,7 +366,7 @@ h4{
 
 .CC-btn {
     font-size: 1.5rem;
-    padding: 0.7rem 0;
+    padding: 0.7rem;
     width: 12rem;
     text-align: center;
     border: 0.1rem solid #FFFDE7;
@@ -323,6 +383,7 @@ h4{
     padding: 0.7rem 0;
     width: 12rem;
     text-align: center;
+    justify-content: center;
     border: 0.1rem solid #F5F5F5;
     border-radius: 25px;
     margin-bottom: 1rem;
@@ -353,181 +414,15 @@ h4{
     transition: transform 150ms;
 }
 
+.share-btn:hover {
+    cursor: pointer;
+    box-shadow: 0 0.4rem 2.4rem 0 rgba(0, 0, 0, 0.5); 
+    transform: translateY(-0.1rem);
+    transition: transform 150ms;
+}
+
 .btn[disabled]:hover {
     cursor: not-allowed;
     box-shadow: none;
     transform: none;
-}
-
-/* shopping cart styles */
-
-.navbar {
-    background-color: black;
-}
-
-.navbar-div {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    /* position: relative; */
-    height: 5rem;
-    /* font-family: 'providence-bold';
-    src: url('/fonts/OptimaLTStd.ttf'); */
-    /* background-color: rgb(138, 38, 38);    */
-    margin-left: 4%;
-    margin-right: 4%;
-}
-
-#logo {
-    display: block;
-    /* left: 50%; */
-    max-height: 35%;
-    width: auto;
-}
-
-.cart {
-    display: flex;
-    /* justify-content: center; */
-}
-
-#cart-btn {
-    /* max-height: 5%; */
-    max-width: 75%;
-    margin-left: auto;
-    /* margin-right: auto; */
-}
-
-.cart-icon {
-    margin-left: 35px;
-    display: flex;
-}
-
-#cart-count {
-    position: absolute;
-    width: 15px;
-    height: 15px;
-    border-radius: 50%;
-    background-color: white;
-    top: 29px;
-    right: 11px;
-    color: black;
-    text-align: center;
-    font-family: NotoSans;
-    font-weight: bold;
-    font-size: 1.2rem;
-}
-
-#cart-list {
-    overflow: scroll;
-    height: 185px;
-}
-
-.cart-contents {
-    height: 32rem;
-    width: 20rem;
-    right: -1px;
-    /* top: auto; */
-    position: absolute;
-    background-color: white;
-    z-index: 996;
-    bottom: 441px;
-    /* left: 542px; */
-}
-
-.cart-contents > header > p, a {
-    font-family: OptimaLTStd;
-    color: black;
-    font-size: 1.5rem;
-    margin: 0;
-}
-
-.cart-contents header {
-    padding: 10px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-#exit-cart-btn {
-    max-width: 13%;
-}
-
-.cart-items {
-    padding: 0 10px 10px 10px;
-}
-
-#product1-img {
-    max-width: 20%;
-    float: left;
-    /* margin: 0px 10px 5px 5px; */
-    margin-right: 10px;
-}
-
-.cart-product-name {
-    font-family: NotoSans;
-    font-size: 1.25rem;
-}
-
-.cart-product-details, .cart-product-qty {
-    font-family: NotoSans;
-    font-weight: 100;
-    font-size: 1.2rem;
-    color: black;
-}
-
-.cart-product-qty {
-    font-family: NotoSans;
-    font-style: italic;
-    font-size: 1.25rem;
-}
-
-a:link {
-    text-decoration: none;
-}
-
-ul {
-    list-style-type: none;
-}
-
-.cart-product {
-    margin-bottom: 15px;
-}
-
-.cart-product-price {
-    font-family: NotoSans;
-    font-weight: bold;
-    font-size: 1.25rem;
-    color: black;
-}
-
-.subtotal {
-    display: flex;
-    justify-content: space-between;
-}
-
-.cart-footer {
-    padding: 10px;
-}
-
-.subtotal p {
-    font-family: OptimaLTStd;
-    color: black;
-    font-size: 1.45rem;
-    margin: 0;
-}
-
-.checkout {
-    display: flex;
-    justify-content: center;
-}
-
-.checkout button {
-    width: 100%;
-    font-family: OptimaLTStd;
-    font-weight: bold;
-    font-size: 1.5rem;
-    text-transform: uppercase;
-    color: black;
-    margin: 10px 0 10px 0;
-    line-height: 30px;
 }

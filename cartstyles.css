@@ -1,0 +1,245 @@
+@font-face { 
+  font-family: OptimaLTStd;
+  src: url('../fonts/OptimaLTStd.ttf');
+}
+
+@font-face { 
+  font-family: OptimaLTStd;
+  src: url('../fonts/OptimaLTStd-DemiBold.ttf');
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: NotoSans;
+  src: url("../fonts/NotoSans-Medium.ttf");
+}
+@font-face {
+  font-family: NotoSans;
+  src: url("../fonts/NotoSans-Light.ttf");
+  font-weight: 100;
+}
+@font-face {
+  font-family: NotoSans;
+  src: url("../fonts/NotoSans-Bold.ttf");
+  font-weight: bold;
+}
+@font-face {
+  font-family: NotoSans;
+  src: url("../fonts/NotoSans-LightItalic.ttf");
+  font-style: italic;
+}
+
+.hidden {
+  visibility: hidden !important;
+  /* opacity: 0; */
+}
+
+/* navbar styles */
+
+.navbar {
+  background-color: black;
+  width: 100%;
+}
+
+.navbar-div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* position: relative; */
+  height: 6vh;
+  /* font-family: 'providence-bold';
+  src: url('/fonts/OptimaLTStd.ttf'); */
+  /* background-color: rgb(138, 38, 38);    */
+  margin-left: 4%;
+  margin-right: 4%;
+  /* width: 100%; */
+}
+
+.index-navbar-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 6vh;
+  margin-left: 4%;
+  margin-right: 4%;
+}
+
+#logo {
+  display: block;
+  /* left: 50%; */
+  max-height: 4.7vw;
+  width: auto;
+}
+
+/* shopping cart styles */
+
+.cart {
+  display: flex;
+  /* justify-content: center; */
+}
+
+#cart-btn {
+  /* max-height: 5%; */
+  max-width: 75%;
+  margin-left: auto;
+  /* margin-right: auto; */
+}
+
+.cart-icon {
+  margin-left: 35px;
+  display: flex;
+}
+
+#cart-count {
+  position: absolute;
+  width: 3.2vw;
+  height: 3.5vw;
+  border-radius: 50%;
+  background-color: white;
+  top: 3.4vh;
+  right: 3.3vw;
+  color: black;
+  text-align: center;
+  line-height: 4.25vw;
+  font-family: NotoSans;
+  font-weight: bold;
+  font-size: 1.1vh;
+}
+
+#cart-list {
+  overflow: scroll;
+  max-height: 70%;
+}
+
+.cart-contents {
+  height: 114vw;
+  width: 70vw;
+  right: 1px;
+  top: 6vh;
+  position: absolute;
+  background-color: white;
+  z-index: 996;
+}
+
+.cart-contents > header > p {
+  font-family: OptimaLTStd;
+  color: black;
+  font-size: 1.7rem;
+  margin: 0;
+}
+
+.cart-contents header {
+  padding: 0.4rem 0.8rem 0.4rem 0.8rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 0.2px solid black;
+}
+
+#exit-cart-btn {
+  max-width: 13%;
+}
+
+.cart-items {
+  padding: 0.8rem;
+}
+
+.cart-product-img {
+  max-width: 7vh;
+  float: left;
+  /* margin: 0px 10px 5px 5px; */
+  margin-right: 10px;
+}
+
+.cart-product-name {
+  font-family: NotoSans;
+  font-size: 3vw;
+}
+
+.cart-product-details, .cart-product-qty {
+  font-family: NotoSans;
+  font-weight: 100;
+  font-size: 1.2rem;
+  color: black;
+}
+
+.cart-product-qty {
+  font-family: NotoSans;
+  font-style: italic;
+  font-size: 1.7vh;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+.cart-product {
+  margin-bottom: 30px;
+}
+
+.cart-product-price {
+  font-family: NotoSans;
+  font-weight: bold;
+  font-size: 3.7vw;
+  color: black;
+}
+
+.subtotal {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cart-footer {
+  padding: 10px 10px 0 10px;
+  position: absolute;
+  bottom: 0;
+  width: 92%;
+  border-top: 0.2px solid black;
+  background-color: white;
+}
+
+.subtotal p {
+  font-family: OptimaLTStd;
+  color: black;
+  font-size: 1.6rem;
+  margin: 0;
+}
+
+.checkout {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.checkout button {
+  width: 100%;
+  height: 4.3vh;
+  font-family: OptimaLTStd;
+  font-weight: bold;
+  font-size: 2.3vh;
+  text-transform: uppercase;
+  color: black;
+  margin: 10px 0 10px 0;
+  line-height: 0;
+}
+
+.cart-product-info p {
+  margin: 0;
+  font-family: Noto Sans;
+}
+
+.cart-product-brand {
+  font-size: 1.2rem;
+}
+
+#cart-window {
+  border: 0.2px solid black;
+  visibility: visible;
+  opacity: 1;
+}
+
+.cart-delete-btn {
+  font-family: Noto Sans;
+  font-size: 1rem;
+  line-height: 1rem;
+}

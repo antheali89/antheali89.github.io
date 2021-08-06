@@ -6,20 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DA Landing Page</title>
     <link rel="stylesheet" href="daApp.css">
+    <link rel="stylesheet" href="../cartstyles.css">
 </head>
 <body background= "DA_Images/DA_Background.jpg" style="background-size: cover">
-    <div class="flex-column-center text-center scrolling">
-        <div class="spotlight-sq product-list" style="background-color: #E3D8CA">
-            <h3 class= 'DA-Font' id="Your Aesthetic Is">YOUR AESTHETIC IS:</h3>
-            <h1 class= 'DA-Font' id="Aesthetic" style="padding-bottom: 1rem; color: #39563C"> Dark Academia</h1> 
-            <h3 class= 'DA-Font' id="Description" style="padding-bottom: 1rem">You love reading, cozy cafes,<br>
+    <header class="navbar">
+		<div class="index-navbar-div">
+			<img
+				id="logo"
+				src="../images/ELC_Logo-Horizontal_White.png"
+				alt="Estee-Lauder-Logo"
+			/>
+		</div>
+	</header>
+    <div class="flex-column-center text-center scrolling aesthetic-container">
+        <div class="spotlight-flag product-list" style="background-color: #E3D8CA">
+            <h3 class= 'DA-Font' id="your-aesthetic-is">YOUR AESTHETIC IS:</h3>
+            <h1 class= 'DA-Font' id="Aesthetic" style="color: #39563C"> Dark Academia</h1> 
+            <h3 class= 'DA-Font' id="Description">You love reading, cozy cafes,<br>
                 and wandering through museums.<br>
                 You have an appeciation<br>
                 for classic literature and architecture<br>
                 and a desire to expand your knowledge<br> 
                 of yourself and the world around you.</h3>
-                <h3 class= 'DA-Font' id="Sell" style="padding-bottom: 3rem">We have chosen products to<br>complement these qualities.</h3>
-            <a class="DA-btn" href="DA_Products.html">SEE PRODUCTS</a>
+                <h3 class= 'DA-Font' id="Sell">We have chosen products to<br>complement these qualities.</h3>
+            <a id="see-products-btn" class="DA-btn" href="DA_Products.html">SEE PRODUCTS</a>
         </div>
     </div>
 </body>

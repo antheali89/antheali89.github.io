@@ -3,10 +3,50 @@
 @import url('https://fonts.googleapis.com/css2?family=Turret+Road&display=swap');
 @import url('//db.onlinewebfonts.com/c/1303f23ac6a9bad6b7d1978d846636d2?family=Optima+LT+Std');
 
+@font-face { 
+    font-family: OptimaLTStd;
+    src: url('../fonts/OptimaLTStd.ttf');
+}
+
+@font-face { 
+    font-family: OptimaLTStd;
+    src: url('../fonts/OptimaLTStd-DemiBold.ttf');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: NotoSans;
+    src: url("../fonts/NotoSans-Medium.ttf");
+}
+@font-face {
+    font-family: NotoSans;
+    src: url("../fonts/NotoSans-Light.ttf");
+    font-weight: 100;
+}
+@font-face {
+    font-family: NotoSans;
+    src: url("../fonts/NotoSans-Bold.ttf");
+    font-weight: bold;
+}
+@font-face {
+    font-family: NotoSans;
+    src: url("../fonts/NotoSans-LightItalic.ttf");
+    font-style: italic;
+}
+
+.hidden {
+    visibility: hidden !important;
+    /* opacity: 0; */
+}
+
 :root {
     font-size: 62.5%;
     width: 100%;
     height: 100%;
+}
+
+body {
+    margin: 0;
 }
 
 /* *{
@@ -27,22 +67,23 @@ h4 {
     margin-bottom: 1rem;
 }
 
-h1{
-    font-size: 5rem;
+h1 {
+    font-size: 12vw;
     margin-bottom: 2rem;
+    margin-top: 0;
 }
 h1 > span {
     font-size: 2.4rem;
     font-weight: 100;
 }
 h2{
-    font-size: 1.8rem;
+    font-size: 2.4rem;
     margin-bottom: 1rem;
-    margin-top: 1rem;
+    margin-top: 0;
     font-weight: 50;
 }
 h3{
-    font-size: 1.8rem;
+    font-size: 5vw;
     margin-bottom: 1rem;
     margin-top: 1rem;
     font-weight: 50;
@@ -68,7 +109,11 @@ h4{
     background-color: rgba(75, 56, 48, 1); 
     z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
     cursor: pointer; /* Add a pointer on hover */
-  }
+}
+
+#DA-label {
+    margin: 4vh;
+}
 
 .spotlight {
     position: absolute;
@@ -81,7 +126,7 @@ h4{
 
 .spotlight-sq {
     position: absolute;
-    top: 15vh;
+    top: 20.5vh;
     display: flex;  
     z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
     width: 35rem;
@@ -90,24 +135,19 @@ h4{
 
 .spotlight-flag {
     position: relative;
-    box-sizing: content-box;
-    padding-top: 5rem;
+    --notch: 40px;
+    clip-path: 
+        polygon(
+            0% 0%,     /* top left */
+            100% 0%,    /* top right */
+            100% 100%,  /* bottom right */
+            50% 90%,  /* flag point */
+            0 100%      /* bottom left */
+        );
+    /* padding-top: 5rem; */
     z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
-    width: 35rem;
-    height: 30rem;
-}
-
-.spotlight-flag:after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 0;
-    height: 0;
-    border-bottom: 5rem solid #eee;
-    border-left: 17.5rem solid transparent;
-    border-right: 17.5rem solid transparent;
-    z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+    width: 95vw;
+    /* height: 30rem; */
 }
 
 .container {
@@ -122,16 +162,6 @@ h4{
 
 .container > * {
     width: 100%;
-}
-
-.product-list {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    padding-top: 5rem;
-    overflow: scroll;
-    height: 39rem;
 }
 
 .product {
@@ -185,7 +215,7 @@ h4{
 
 .DA-Font {
 	font-family: Playfair Display, serif;
-    margin: 0;
+    margin-bottom: 2vh;
     padding: 0;
     color: #4B3830;
 }
@@ -204,7 +234,9 @@ h4{
     color: #2D3A3A; 
 }
 
-
+#your-aesthetic-is {
+    margin-top: 3rem;
+}
 
 /* BUTTONS */
 
@@ -215,11 +247,15 @@ h4{
     text-align: center;
     border: 0.1rem solid #4B3830;
     border-radius: 25px;
-    margin-bottom: 1rem;
+    margin-top: 1rem;
     text-decoration: none;
     font-family: "Optima LT Std";
     color: #E3D8CA;
     background-color: #39563C;
+}
+
+#see-products-btn {
+    margin-bottom: 15vw;
 }
 
 .CC-btn {
@@ -275,4 +311,137 @@ h4{
     cursor: not-allowed;
     box-shadow: none;
     transform: none;
+}
+
+
+.arrow {
+    border: solid #4B3830;
+    border-width: 0 4px 4px 0;
+    display: inline-block;
+    padding: 8px;
+    margin-bottom: 10vh;
+}
+
+.up {
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+    margin-bottom: 10vh;
+}
+
+#up-arrow-container {
+    margin-bottom: 9vh;
+}
+  
+.down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 80rem;
+    margin: 0 auto;
+}
+
+.container > * {
+    width: 100%;
+}
+
+.aesthetic-container {
+    margin-top: 30vw;
+}
+
+.product {
+    display: flex;
+    position: relative;
+    height: 72vh;
+    width: 82%;
+    flex-direction: row;
+    align-items: center;
+    flex-grow: 1;
+    margin-bottom: 4vh;
+}
+
+.product-header {
+    padding-top: 5vh;
+}
+
+.product-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.product-img {
+    width: 40%;
+    float: left;
+    /* margin-left: 19rem; */
+    margin-right: 2rem;
+}
+
+.brand-logo {
+    width: 40vw;
+    height: auto;
+}
+
+.product-desc {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.prod-desc-div {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    height: 15vh;
+}
+
+.prod-category {
+    font-size: 1.7rem;
+}
+
+.prod-info-container {
+    overflow-wrap: break-word;
+    width: 24vh;
+}
+
+.product {
+    display: flex;
+    position: relative;
+    height: 72vh;
+    width: 82%;
+    flex-direction: row;
+    align-items: center;
+    flex-grow: 1;
+    margin-bottom: 4vh;
+}
+
+.product-list {
+    /* padding-top: 5vh; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    text-align: center;
+    overflow: scroll;
+    height: 135vw;
+    width: 97vw;
+}
+
+.share-circle {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 1rem;
+    display: flex;  
+    z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgba(255,255,255, 1);
 }

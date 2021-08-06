@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CC Landing Page</title>
     <link rel="stylesheet" href="ccApp.css">
+    <link rel="stylesheet" href="../cartstyles.css">
+
 </head>
 <body class= "flex-column-center text-center" background="ccImages/CC_Background.jpg" style="background-size: cover">
     <div class="spotlight" style="background-color: #ACBEA3">
@@ -15,17 +17,28 @@
 </html>
 
 <body background="ccImages/CC_Background.jpg" style="background-size: cover">
-    <div class="flex-column-center text-center scrolling">
-        <div class= "spotlight product-list" style="background-color: #ACBEA3">
-            <h3 class= 'CC-Font' id="Your Aesthetic Is" style="padding-bottom: 1rem">YOUR AESTHETIC IS:</h3>
-            <h1 class= 'CC-Font' id="Aesthetic" style="padding-bottom: 1rem; color: #687BBA"> Cottagecore</h1> 
-            <h3 class= 'CC-Font' id="Description" style="padding-bottom: 1rem">You love baking, picking<br>
-                wildflowers, and flowy fabrics.<br>
-                You have a deep connection<br>
-                to nature and an appreciation<br>
-                for the simple things in life.</h3>
-            <h3 class= 'CC-Font' id="Sell" style="padding-bottom: 3rem">We have chosen products to<br>complement these qualities.</h3>
-            <a style= 'color: #FFFDE7' class="CC-btn" href="ccProducts.html">SEE PRODUCTS</a>
+    <header class="navbar">
+		<div class="index-navbar-div">
+			<img
+				id="logo"
+				src="../images/ELC_Logo-Horizontal_White.png"
+				alt="Estee-Lauder-Logo"
+			/>
+		</div>
+	</header>
+    <div class="flex-column-center text-center scrolling circle-container">
+        <div class= "spotlight aesthetic-circle" style="background-color: #ACBEA3">
+            <div id="cc-div">
+                <h3 class="CC-Font index-desc" id="aesthetic-heading">YOUR AESTHETIC IS:</h3>
+                <h1 class="CC-Font index-desc" id="aesthetic" style="color: #687BBA"> Cottagecore</h1> 
+                <h3 class="CC-Font index-desc" id="aesthetic-description">You love baking, picking
+                    wildflowers, and flowy fabrics.
+                    You have a deep connection
+                    to nature and an appreciation
+                    for the simple things in life.</h3>
+                <h3 class="CC-Font index-desc" id="Sell" style="padding-bottom: 1rem">We have chosen products to complement these qualities.</h3>
+                <a style='color: #FFFDE7' class="CC-btn" href="ccProducts.html">SEE PRODUCTS</a>
+            </div>
         </div>
     </div>
 </body>

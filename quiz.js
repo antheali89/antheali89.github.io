@@ -205,6 +205,7 @@
   }
 
   function getAnswers() {
+    this.nextElementSibling.classList.add("clicked");
     let selectedNum = this.dataset["number"];
     let questionText = this.name;
     let question = questions.find((q) => q.question === questionText);
@@ -218,31 +219,40 @@
     // check if quiz is complete
     if (numAnswered === questions.length) {
       finishQuiz();
+    } else {
+      window.scrollTo({
+        top: qLocation[numAnswered].offsetTop,
+        behavior: "smooth",
+      });
     }
-    console.log(qLocation); //test
-    window.scrollTo({
-      top: qLocation[numAnswered].offsetTop,
-      behavior: "smooth"
-    });
   }
 
   function finishQuiz() {
     let max_val = Math.max(total_cc, total_da, total_ecore);
-    let resultLink = document.getElementById("results-link");
-    //var resultImg = document.getElementById("resultImg");
 
-    resultLink.classList.remove("hidden");
+    let resultBtn = document.getElementById("view-results-btn");
+    resultBtn.classList.remove("hidden");
+    window.scrollTo({
+      top: document.body.scrollHeight,
+      behavior: "smooth",
+    });
     if (max_val === total_cc) {
-      resultLink.setAttribute("href", "/cottagecore/ccIndex.html");
-      /*resultImg.src = "images/cottagecore.jpg";*/
+      resultBtn.addEventListener("click", function () {
+        window.location = "/cottagecore/ccIndex.html";
+      });
+      // resultLink.setAttribute("href", "/cottagecore/ccIndex.html");
     } else if (max_val === total_da) {
-      resultLink.setAttribute("href", "/darkacademia/DA_Index.html");
-      resultHeader.innerHTML =
-        "<a href='/darkacademia/DA_Index.html' text-align: center><u> Your personalized aesthetic and products are ready to view! Click Here</u>. </a>";
-      /*resultImg.src = "images/darkacademia.jpg";*/
+      resultBtn.addEventListener("click", function () {
+        window.location = "/darkacademia/DA_Index.html";
+      });
+      // resultLink.setAttribute("href", "/darkacademia/DA_Index.html");
+      // resultHeader.innerHTML =
+      //   "<a href='/darkacademia/DA_Index.html' text-align: center><u> Your personalized aesthetic and products are ready to view! Click Here</u>. </a>";
     } else {
-      resultLink.setAttribute("href", "/ecore/eIndex.html");
-      /*resultImg.src = "images/e-core.jpg";*/
+      resultBtn.addEventListener("click", function () {
+        window.location = "/ecore/eIndex.html";
+      });
+      // resultLink.setAttribute("href", "/ecore/eIndex.html");
     }
   }
 })();

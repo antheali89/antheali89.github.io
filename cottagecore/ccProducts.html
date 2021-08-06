@@ -5,8 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CC Landing Page</title>
-    <link rel="stylesheet" href="ccApp.css" />
-    <script type="text/javascript" src="../quiz/products.js"></script>
+    <link rel="stylesheet" href="ccApp.css"/>
+    <link rel="stylesheet" href="../cartstyles.css">
+    <script type="text/javascript" src="../products.js"></script>
     <script type="text/javascript" src="ccProducts.js"></script>
   </head>
   <body background="ccImages/CC_Background.jpg" style="background-size: cover">
@@ -15,13 +16,13 @@
       <div class="navbar-div">
         <img
           id="logo"
-          src="../quiz/images/ELC_Logo-Horizontal_White.png"
+          src="../images/ELC_Logo-Horizontal_White.png"
           alt="Estee-Lauder-Logo"
         />
 
         <div class="cart">
           <div class="cart-icon">
-            <input id="cart-btn" type="image" src="../quiz/images/shopping-bag.jpg" />
+            <input id="cart-btn" type="image" src="../images/shopping-bag.jpg" />
             <div id="cart-count">0</div>
           </div>
 
@@ -31,7 +32,7 @@
               <input
                 id="exit-cart-btn"
                 type="image"
-                src="../quiz/images/exit-icon.jpg"
+                src="../images/exit-icon.jpg"
               />
             </header>
 
@@ -51,7 +52,7 @@
       </div>
     </header>
     <!-- end of shopping cart -->
-    <div class="flex-column-center text-center">
+    <div id="products-section" class="flex-column-center text-center">
       <img
         id="cc-label"
         src="ccImages/CC_Label.png"
@@ -64,201 +65,9 @@
         id="products-container"
         style="background-color: #acbea3"
       >
-        <!-- <h3 class="CC-Font" id="Product 1">Product #1</h3> -->
-        <!-- <div class="product" style="padding-bottom: 10rem; padding-top: 2rem">
-          <img
-            src="ccImages/AV_ISM_Hair.png"
-            alt="Aveda Hair Masque"
-            width="auto"
-            height="250"
-            style="padding-right: 0.5rem"
-          />
-          <div class="flex-column-center text-center">
-            <img
-              class="img-top"
-              src="ccImages/Aveda_Logo.png"
-              alt="Aveda Logo"
-              width="100"
-              height="auto"
-              style="padding-top: 3rem; padding-bottom: 1rem"
-            />
-            <h3 class="CC-Font" id="Product Name" style="padding-bottom: 2rem">
-              botanical repair™<br />intensive strengthening<br />masque: light
-            </h3>
-            <a
-              class="CC-btn"
-              href="https://www.aveda.com/product/17754/80717/hair-care/treatment-masques/botanical-repair-intensive-strengthening-masque-light#/shade/.85_fl_oz%2F25_ml_-_travel_size"
-              >ADD TO CART</a
-            >
-          </div>
-        </div>
-        <h3 class="CC-Font" id="Product 2">Product #2</h3>
-        <div class="product" style="padding-bottom: 10rem">
-          <img
-            src="ccImages/C_Soap_Trio.png"
-            alt="Clinique Bar Soap"
-            width="200"
-            height="auto"
-            style="padding-right: 0.5rem"
-          />
-          <div class="flex-column-center text-center">
-            <img
-              class="img-top"
-              src="ccImages/Clinique_Logo.webp"
-              alt="Clinique Logo"
-              width="100"
-              height="auto"
-              style="padding-top: 3rem; padding-bottom: 1rem"
-            />
-            <h3 class="CC-Font" id="Product Name" style="padding-bottom: 2rem">
-              3 Little Soaps<br />with Travel Dish<br />- Mild
-            </h3>
-            <a
-              class="CC-btn"
-              href="https://www.clinique.com/product/1572/5168/3-step/step-1-cleanse/3-little-soaps-with-travel-dish--mild?size=4.5_oz_-_Skin_Type_2"
-              >ADD TO CART</a
-            >
-          </div>
-        </div>
-        <h3 class="CC-Font" id="Product 3">Product #3</h3>
-        <div class="product" style="padding-bottom: 10rem">
-          <img
-            src="ccImages/MAC_LipG_C.png"
-            alt="MAC Lip Glass in C-Thru"
-            width="100"
-            height="auto"
-          />
-          <div class="flex-column-center text-center">
-            <img
-              class="img-top"
-              src="ccImages/MAC_Logo.png"
-              alt="MAC Logo"
-              width="100"
-              height="auto"
-              style="padding-top: 3rem; padding-bottom: 1rem"
-            />
-            <h3 class="CC-Font" id="Product Name" style="padding-bottom: 2rem">
-              Lipglass Mini<br />in C-Thru
-            </h3>
-            <a
-              class="CC-btn"
-              href="https://www.maccosmetics.com/product/13853/30810/products/makeup/lips/lip-gloss/lipglass-mini-mac#!/shade/C-Thru"
-              >ADD TO CART</a
-            >
-          </div>
-        </div>
-        <h3 class="CC-Font" id="Product 4">Product #4</h3>
-        <div class="product" style="padding-bottom: 10rem">
-          <img
-            src="ccImages/O_Pret_Trio.png"
-            alt="Skin Prettifiers"
-            width="190"
-            height="auto"
-          />
-          <div class="flex-column-center text-center">
-            <img
-              class="img-top"
-              src="ccImages/Origins_Logo.png"
-              alt="Origins Logo"
-              width="100"
-              height="auto"
-              style="padding-top: 3rem; padding-bottom: 1rem"
-            />
-            <h3 class="CC-Font" id="Product Name" style="padding-bottom: 2rem">
-              Cleansing, Retexturizing<br />And Mattifying Trio
-            </h3>
-            <a
-              class="CC-btn"
-              href="https://www.origins.com/product/15341/85575/skincare/skincare-gifts/skin-prettifiers/cleansing-retexturizing-and-mattifying-trio#/sku/129183"
-              >ADD TO CART</a
-            >
-          </div>
-        </div>
-        <h3 class="CC-Font" id="Product 5">Product #5</h3>
-        <div class="product" style="padding-bottom: 10rem">
-          <img
-            src="ccImages/TF_PBalm.png"
-            alt="Too Faced Pillow Balm"
-            width="130"
-            height="auto"
-            style="padding-right: 0.5rem"
-          />
-          <div class="flex-column-center text-center">
-            <img
-              class="img-top"
-              src="ccImages/Too_Faced_Logo.webp"
-              alt="TF Logo"
-              width="120"
-              height="auto"
-              style="padding-top: 3rem; padding-bottom: 1rem"
-            />
-            <h3 class="CC-Font" id="Product Name" style="padding-bottom: 2rem">
-              Travel Hangover<br />
-              Pillow Balm<br />Lip Treatment
-            </h3>
-            <a
-              class="CC-btn"
-              href="https://www.toofaced.com/product/24722/86334/skin-care/lip-treatments/travel-size-hangover-pillow-balm-lip-treatment/hydrating-balm-infused-with-fruit-oils-coconut-water"
-              >ADD TO CART</a
-            >
-          </div>
-        </div>
-        <h3 class="CC-Font" id="Product 6">Product #6</h3>
-        <div class="product" style="padding-bottom: 10rem">
-          <img
-            src="ccImages/MAC_Blush_FP.png"
-            alt="MAC Fleur Power Blush"
-            width="200"
-            height="auto"
-            style="padding-right: 0.5rem"
-          />
-          <div class="flex-column-center text-center">
-            <img
-              class="img-top"
-              src="ccImages/MAC_Logo.png"
-              alt="MAC Logo"
-              width="100"
-              height="auto"
-              style="padding-top: 3rem; padding-bottom: 1rem"
-            />
-            <h3 class="CC-Font" id="Product Name" style="padding-bottom: 2rem">
-              Powder Blush<br />in Fleur Power
-            </h3>
-            <a
-              class="CC-btn"
-              href="https://www.maccosmetics.com/product/13842/329/products/makeup/face/blush-bronzer/powder-blush#!/shade/Fleur_Power"
-              >ADD TO CART</a
-            >
-          </div>
-        </div>
-        <h3 class="CC-Font" id="Product 7">Product #7</h3>
-        <div class="product" style="padding-bottom: 10rem">
-          <img
-            src="ccImages/JM_BB_Cologne.png"
-            alt="Jo Malone Blackberry & Bay Cologne"
-            width="130"
-            height="auto"
-            style="padding-right: 0.5rem"
-          />
-          <div class="flex-column-center text-center">
-            <img
-              class="img-top"
-              src="ccImages/Jo_Malone_Logo.png"
-              alt="Jo Malone Logo"
-              width="125"
-              height="75"
-              style="padding-top: 3rem"
-            />
-            <h3 class="CC-Font" id="Product Name" style="padding-bottom: 2rem">
-              Blackberry & Bay<br />Cologne
-            </h3>
-            <a
-              class="CC-btn"
-              href="https://www.jomalone.com/product/25946/23540/colognes/blackberry-bay-cologne?size=100ml"
-              >ADD TO CART</a
-            >
-          </div>
-        </div> -->
+      </div>
+      <div class="share-circle justify-center align-center">
+        <img src="../images/share.png" alt="Upload" width="30rem" />
       </div>
     </div>
   </body>
