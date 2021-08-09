@@ -337,21 +337,21 @@ h4{
 /* FONTS */
 
 .DA-Font {
-	font-family: Playfair Display, serif;
+	font-family: "Playfair Display", serif;
     margin: 0;
     padding: 0;
     color: #E9D6C3;
 }
 
 .CC-Font {
-	font-family: 'EB Garamond', serif; 
+	font-family: "EB Garamond", serif; 
     margin: 0;
     padding: 0;
     color: #FFFDE7; 
 }
 
 .EC-Font {
-	font-family: 'Turret Road', cursive;
+	font-family: "Turret Road", cursive;
     color: #2D3A3A; 
 }
 
