@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Turret+Road&display=swap');
-@import url('//db.onlinewebfonts.com/c/1303f23ac6a9bad6b7d1978d846636d2?family=Optima+LT+Std');
+/* @import url('//db.onlinewebfonts.com/c/1303f23ac6a9bad6b7d1978d846636d2?family=Optima+LT+Std'); */
 
 @font-face { 
     font-family: OptimaLTStd;
@@ -215,7 +215,7 @@ h4{
 
 .DA-Font {
 	font-family: "Playfair Display", serif;
-    margin-bottom: 2vh;
+    margin-bottom: 0;
     padding: 0;
     color: #4B3830;
 }
@@ -235,7 +235,7 @@ h4{
 }
 
 #your-aesthetic-is {
-    margin-top: 3rem;
+    margin-top: 2rem;
 }
 
 /* BUTTONS */

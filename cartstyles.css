@@ -1,31 +1,41 @@
-@font-face { 
+@font-face {
   font-family: OptimaLTStd;
-  src: url('fonts/OptimaLTStd.ttf');
+  src: url("fonts/OptimaLTStd.ttf");
 }
 
-@font-face { 
+@font-face {
   font-family: OptimaLTStd;
-  src: url('fonts/OptimaLTStd-DemiBold.ttf');
+  src: url("fonts/OptimaLTStd-DemiBold.ttf") format("ttf"),
+    url("fonts/OptimaLTStd-DemiBold.woff") format("woff"),
+    url("fonts/OptimaLTStd-DemiBold.woff2") format("woff2");
   font-weight: bold;
 }
 
 @font-face {
   font-family: NotoSans;
-  src: url("fonts/NotoSans-Medium.ttf");
+  src: url("fonts/NotoSans-Medium.ttf") format("ttf"),
+    url("fonts/NotoSans-Medium.woff") format("woff"),
+    url("fonts/NotoSans-Medium.woff2") format("woff2");
 }
 @font-face {
   font-family: NotoSans;
-  src: url("fonts/NotoSans-Light.ttf");
+  src: url("fonts/NotoSans-Light.ttf"),
+    url("fonts/NotoSans-LightItalic.woff") format("woff"),
+    url("fonts/NotoSans-LightItalic.woff2") format("woff2");
   font-weight: 100;
 }
 @font-face {
   font-family: NotoSans;
-  src: url("fonts/NotoSans-Bold.ttf");
+  src: url("fonts/NotoSans-Bold.ttf") format("ttf"),
+    url("fonts/NotoSans-Bold.woff") format("woff"),
+    url("fonts/NotoSans-Bold.woff2") format("woff2");
   font-weight: bold;
 }
 @font-face {
   font-family: NotoSans;
-  src: url("fonts/NotoSans-LightItalic.ttf");
+  src: url("fonts/NotoSans-LightItalic.ttf") format("ttf"),
+    url("fonts/NotoSans-LightItalic.woff") format("woff"),
+    url("fonts/NotoSans-LightItalic.woff2") format("woff2");
   font-style: italic;
 }
 
@@ -156,7 +166,8 @@
   font-size: 3vw;
 }
 
-.cart-product-details, .cart-product-qty {
+.cart-product-details,
+.cart-product-qty {
   font-family: NotoSans;
   font-weight: 100;
   font-size: 1.2rem;
