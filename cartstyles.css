@@ -191,7 +191,7 @@ a:link {
 .cart-product-price {
   font-family: NotoSans;
   font-weight: bold;
-  font-size: 3.7vw;
+  font-size: 3.5vw;
   color: black;
 }
 
@@ -231,16 +231,16 @@ a:link {
   text-transform: uppercase;
   color: black;
   margin: 10px 0 10px 0;
-  line-height: 0;
+  line-height: 4.3vh;
 }
 
 .cart-product-info p {
   margin: 0;
-  font-family: Noto Sans;
+  font-family: NotoSans;
 }
 
 .cart-product-brand {
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 
 #cart-window {
@@ -250,7 +250,7 @@ a:link {
 }
 
 .cart-delete-btn {
-  font-family: Noto Sans;
+  font-family: NotoSans;
   font-size: 1rem;
   line-height: 1rem;
 }
