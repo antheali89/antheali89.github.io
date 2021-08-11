@@ -2,12 +2,17 @@
 @import url("https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Turret+Road&display=swap");
 
-@font-face { 
+/* @font-face {
+  font-family: Playfair Display;
+  src: url("../fonts/PlayfairDisplay.ttf") format('ttf');
+} */
+
+@font-face {
     font-family: OptimaLTStd;
     src: url('../fonts/OptimaLTStd.ttf');
 }
 
-@font-face { 
+@font-face {
     font-family: OptimaLTStd;
     src: url('../fonts/OptimaLTStd-DemiBold.ttf');
     font-weight: bold;
@@ -52,7 +57,7 @@ body {
     font-family: Playfair Display, serif;
     margin: 0;
     padding: 0;
-    color: #E9D6C3 
+    color: #E9D6C3
 } */
 
 html,body {
@@ -102,10 +107,10 @@ h4{
 .overlay {
     position: absolute;
     top: 10vh;
-    display: flex; 
-    width: 100vw; 
-    height: 80vh; 
-    background-color: rgba(75, 56, 48, 1); 
+    display: flex;
+    width: 100vw;
+    height: 80vh;
+    background-color: rgba(75, 56, 48, 1);
     z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
     cursor: pointer; /* Add a pointer on hover */
 }
@@ -117,7 +122,7 @@ h4{
 .spotlight {
     position: absolute;
     top: 15vh;
-    display: flex;  
+    display: flex;
     z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
     width: 37.5rem;
     border-radius: 350px / 400px;
@@ -126,7 +131,7 @@ h4{
 .spotlight-sq {
     position: absolute;
     top: 20.5vh;
-    display: flex;  
+    display: flex;
     z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
     width: 35rem;
     height: 30rem;
@@ -135,7 +140,7 @@ h4{
 .spotlight-flag {
     position: relative;
     --notch: 40px;
-    clip-path: 
+    clip-path:
         polygon(
             0% 0%,     /* top left */
             100% 0%,    /* top right */
@@ -220,17 +225,17 @@ h4{
 }
 
 .CC-Font {
-	font-family: "EB Garamond", serif; 
+	font-family: "EB Garamond", serif;
     margin: 0;
     padding: 0;
-    color: #FFFDE7; 
+    color: #FFFDE7;
 }
 
 .EC-Font {
 	font-family: "Turret Road", cursive;
     margin: 0;
     padding: 0;
-    color: #2D3A3A; 
+    color: #2D3A3A;
 }
 
 #your-aesthetic-is {
@@ -287,21 +292,21 @@ h4{
 
 .DA-btn:hover {
     cursor: pointer;
-    box-shadow: 0 0.4rem 2.4rem 0 rgba(0, 0, 0, 0.5); 
+    box-shadow: 0 0.4rem 2.4rem 0 rgba(0, 0, 0, 0.5);
     transform: translateY(-0.1rem);
     transition: transform 150ms;
 }
 
 .CC-btn:hover {
     cursor: pointer;
-    box-shadow: 0 0.4rem 2.4rem 0 rgba(0, 0, 0, 0.5); 
+    box-shadow: 0 0.4rem 2.4rem 0 rgba(0, 0, 0, 0.5);
     transform: translateY(-0.1rem);
     transition: transform 150ms;
 }
 
 .EC-btn:hover {
     cursor: pointer;
-    box-shadow: 0 0.4rem 2.4rem 0 rgba(0, 0, 0, 0.5); 
+    box-shadow: 0 0.4rem 2.4rem 0 rgba(0, 0, 0, 0.5);
     transform: translateY(-0.1rem);
     transition: transform 150ms;
 }
@@ -330,7 +335,7 @@ h4{
 #up-arrow-container {
     margin-bottom: 9vh;
 }
-  
+
 .down {
     transform: rotate(45deg);
     -webkit-transform: rotate(45deg);
@@ -394,7 +399,7 @@ h4{
 
 .prod-desc-div {
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 15vh;
@@ -437,7 +442,7 @@ h4{
     bottom: 0;
     right: 0;
     margin: 1rem;
-    display: flex;  
+    display: flex;
     z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
     width: 4rem;
     height: 4rem;

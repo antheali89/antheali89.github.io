@@ -236,7 +236,7 @@ a:link {
 
 .cart-product-info p {
   margin: 0;
-  font-family: Noto Sans;
+  font-family: NotoSans;
 }
 
 .cart-product-brand {
@@ -250,7 +250,7 @@ a:link {
 }
 
 .cart-delete-btn {
-  font-family: Noto Sans;
+  font-family: NotoSans;
   font-size: 1rem;
   line-height: 1rem;
 }
